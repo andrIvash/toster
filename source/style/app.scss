@@ -1,5 +1,48 @@
-body {
-  margin: 0;
+html, body {
+    height: 100%;
 }
 
-@import 'common/greating';
+body {
+  margin: 0;
+  min-width: 320px;
+}
+.row {
+    border: 0;
+}
+.container-fluid {
+    border: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    overflow: hidden;
+    padding: 0;
+}
+.wrapper:after {
+    content: "";
+    height: 100px;
+    display: block;
+}
+
+.footer {
+    height: 100px;
+    margin-top: -100px;
+    background-color: #000000;
+}
+
+
+
+$color-dark_green: #3b401e;
+$color-green: #f3efe4;
+$color-orange: #e8930c;
+$color-light_orange: #c4b07a;
+$color-light_green: #757f3c;
+$color-gray: #414141;
+$color-white: #ffffff;
+
+@import 'awesome/font-awesome.scss';
+@import 'common/header';
+@import 'common/main-content';
+
