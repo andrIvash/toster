@@ -1,14 +1,111 @@
 .container-fluid.main
-        .container.main__content
-            .row
-                .col.col-xs-12.col-sm-12.col-md-12.col-lg-12
-                    .main-img__wrapper
-                        img.main-img__img.img-responsive(src="assets/img/main.png" alt="main")  
-                        .main__inner
-                            .main__title Latest Blog Post
-                            .main__desq
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. |Ad consequatur optio iste repellendus, ullam deserunt |ignissimos cumque doloremque molestiae autem! Molestiae non |modi, dolorem . 
-                            button.main__button.btn.btn-primary.btn-lg.btn-block.btn-warning(type="button") Main Button
+    .container.main__content
+        .row
+            .col.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                .main-img__wrapper
+                    img.main-img__img(src="assets/img/main.png" alt="main")  
+                    .main__inner
+                        .main__title Latest Blog Post
+                        .main__desq
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. |Ad consequatur optio iste repellendus, ullam deserunt |ignissimos cumque doloremque molestiae autem! Molestiae non |modi, dolorem . 
+                        button.main__button.btn.btn-primary.btn-lg.btn-block.btn-warning(type="button") Main Button
+                .row
+                    .col-xs-12.col-sm-12.col-md-9.col-md-push-3.col-lg-9.col-lg-push-3.main__posts.posts
+                        .posts__title Latest posts
+                        ul.posts__list
+                            li.posts__item
+                               .row
+                                    .col-xs-12.col-sm-12.col-md-3.col-lg-3
+                                        .posts__img-wrapper
+                                            img.posts__img(src="assets/img/foto.png" alt="post photo")
+                                    .col-xs-12.col-sm-12.col-md-9.col-lg-9
+                                        .posts__sample.sample
+                                            .sample__comment
+                                                i.fa.fa-comment.fa-2x(aria-hidden="true")
+                                                .sample__comment-number 3
+                                            .sample__title New Laws in Washington
+                                            .sample__info
+                                                span.sample__date 
+                                                    i.fa.fa-clock-o(aria-hidden="true")
+                                                    |  July 12, 2013
+                                                span.sample__author
+                                                    i.fa.fa-user(aria-hidden="true")    
+                                                    |  Joe Shmoe
+                                            .sample__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique optio voluptate quos consequatur? Nihil architecto iste debitis, molestias perspiciatis temporibus... 
+                                                a.sample__link(href="") Read More       
+                            li.posts__item
+                                .row
+                                    .col-xs-12.col-sm-12.col-md-3.col-lg-3
+                                        .posts__img-wrapper
+                                            img.posts__img(src="assets/img/foto.png" alt="post photo")
+                                    .col-xs-12.col-sm-12.col-md-9.col-lg-9
+                                        .posts__sample.sample
+                                            .sample__comment
+                                                i.fa.fa-comment.fa-2x(aria-hidden="true")
+                                                .sample__comment-number 3
+                                            .sample__title New Laws in Washington
+                                            .sample__info
+                                                span.sample__date 
+                                                    i.fa.fa-clock-o(aria-hidden="true")
+                                                    |  July 12, 2013
+                                                span.sample__author
+                                                    i.fa.fa-user(aria-hidden="true")    
+                                                    |  Joe Shmoe
+                                            .sample__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique optio voluptate quos consequatur? Nihil architecto iste debitis, molestias perspiciatis temporibus... 
+                                                a.sample__link(href="") Read More                           
+
+                    .col-xs-12.col-sm-12.col-md-3.col-md-pull-9.col-lg-3.col-lg-pull-9main__sidebar.sidebar
+                        .sidebar__block.category
+                            .sidebar__title.category__title Categories
+                            ul.category__items
+                                li.category__item
+                                    a.sidebar__link.category__link(href="#") Category 1
+                                li.category__item
+                                    a.sidebar__link.category__link(href="#") Category 2
+                                li.category__item
+                                    a.sidebar__link.category__link(href="#") Category 3  
+                                li.category__item
+                                    a.sidebar__link.category__link(href="#") Category 4
+                        .sidebar__block.archive
+                            .sidebar__title.archive__title Archives
+                            ul.archive__items
+                                li.archive__item
+                                    a.sidebar__link.archive__link(href="#") July 2016
+                                li.archive__item
+                                    a.sidebar__link.archive__link(href="#") June 2016
+                                li.archive__item
+                                    a.sidebar__link.archive__link(href="#") May 2016       
+                        .sidebar__block.follow 
+                            .sidebar__title.follow__title Follow us
+                            ul.follow__items
+                                li.follow__item
+                                    a.sidebar__link.follow__link(href="#")
+                                        i.fa.fa-facebook(aria-hidden="true")
+                                        |Facebook
+                                li.follow__item
+                                    a.sidebar__link.follow__link(href="#")
+                                        i.fa.fa-pinterest(aria-hidden="true")
+                                        |Pinterest
+                                li.follow__item
+                                    a.sidebar__link.follow__link(href="#")
+                                        i.fa.fa-instagram(aria-hidden="true")
+                                        |Instagram
+                                li.follow__item
+                                    a.sidebar__link.follow__link(href="#")
+                                        i.fa.fa-twitter(aria-hidden="true")
+                                        |Twitter
+                                li.follow__item
+                                    a.sidebar__link.follow__link(href="#")
+                                        i.fa.fa-rss(aria-hidden="true")    
+                                        |RSS Feed
+                        .sidebar__block.newsletter
+                            .sidebar__title.newsletter__title Join newsletter
+                            .newsletter__mail
+                                input.newsletter__input(placeholder="Enter Your Email" type="text")
+                                i.fa.fa-envelope(aria-hidden="true")
+           
+                 
+                                
                         
 
 
