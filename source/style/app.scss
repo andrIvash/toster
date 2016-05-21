@@ -1,10 +1,98 @@
+//------------------------------ fonts ---------------------------------------//
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_black-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_black-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('../fonts/proxima_nova_thin-webfont.woff2') format('woff2'),
+         url('../fonts/proxima_nova_thin-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'georgiaitalic';
+    src: url('../fonts/georgia_italic-webfont.woff2') format('woff2'),
+         url('../fonts/georgia_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+//----------------------------------- variable --------------------------------//
+
+$color-khaki: #a3a78b;
+$color-dark_green: #3b401e;
+$color-green: #f3efe4;
+$color-orange: #e8930c;
+$color-light_orange: #c4b07a;
+$color-light_green: #757f3c;
+$color-gray: #414141;
+$color-white: #ffffff;
+
+$base-font: 'proxima_nova';
+$base-font_i:'proxima_novaregular_italic';
+$info-font_i: 'georgiaitalic';
+
+
+//------------------------------ base styles ---------------------------------//
 html, body {
     height: 100%;
 }
 
-body {
+body { 
   margin: 0;
   min-width: 320px;
+  font-family: $base-font;
+  background-color: $color-green;
 }
 .row {
     border: 0;
@@ -22,26 +110,23 @@ body {
 }
 .wrapper:after {
     content: "";
-    height: 100px;
+    height: 334px;
     display: block;
 }
 
 .footer {
-    height: 100px;
-    margin-top: -100px;
+    min-height: 334px;
+    margin-top: -334px;
     background-color: #000000;
 }
 
-$color-khaki: #a3a78b;
-$color-dark_green: #3b401e;
-$color-green: #f3efe4;
-$color-orange: #e8930c;
-$color-light_orange: #c4b07a;
-$color-light_green: #757f3c;
-$color-gray: #414141;
-$color-white: #ffffff;
+
+
+//------------------------------------- file import --------------------------//
 
 @import 'awesome/font-awesome.scss';
 @import 'common/header';
 @import 'common/main-content';
+@import 'common/footer';
 
+ 

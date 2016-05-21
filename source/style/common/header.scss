@@ -9,8 +9,11 @@
 .header__delivery {
     color: $color-light_orange;
     font-size: 11px;
+    font-weight: 600;
     text-transform: uppercase;
-    
+    i {
+        margin-right: 10px;
+    }
 }
 
 
@@ -64,6 +67,7 @@
     display: block;
     padding: 0 20px;
     color: $color-gray;
+    font-weight: 600;
     font-size: 16px;
 }
 
@@ -71,6 +75,7 @@
     display: block;
     padding: 0 5px;
     color: $color-gray;
+    font-weight: 600;
     font-size: 12px;
 }
 
@@ -108,7 +113,7 @@
 .search__input {
     text-align: left;
     font-size: 12px;
-    font-style: italic;
+    font-family: $info-font_i;
     border-radius: 6px;
     background-color:  $color-green;
     margin-bottom: 20px;
