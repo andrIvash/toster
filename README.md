@@ -1,6 +1,8 @@
 # Toster
 
-Landing with bootstrap greed and UI
+Adaptive Landing with bootstrap greed and UI
+
+
 
 Getting started:
 
